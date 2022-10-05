@@ -161,7 +161,7 @@ if __name__ == '__main__':
     if len(token_value) == 32:
         st.write("token=", token_value)
         token = token_value
-        st.write(do_task(token))
+        st.write(do_task())
     else:
         st.write("token错误！")
     st.write("over")
