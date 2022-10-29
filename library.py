@@ -13,7 +13,7 @@ def get_dm(aid):
     return page_text
 
 if __name__ == '__main__':
-    st.header("hello")
+    st.write("hello")
     aid = st.text_input("请输入搜索词")
     title_list=get_dm(aid)
     st.write(title_list)
