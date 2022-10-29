@@ -5,17 +5,12 @@
 # @Software: PyCharm
 
 import requests
-from lxml import etree
 
 def get_dm(aid):
     page_text = requests.get(url=f"https://m.runoob.com/{aid}/").text
-    # print(page_text)
-    tree=etree.HTML(page_text)
-    content_list=tree.xpath('//*[@class="post_box"]')
-    title_list = []
-    for content in content_list:
-        title_list.extend(content.xpath('a/h2/text()'))
-    return title_list
+    
+    
+    return page_text
 
 if __name__ == '__main__':
     st.header("hello")
